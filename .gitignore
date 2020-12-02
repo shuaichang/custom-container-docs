@@ -1,0 +1,7 @@
+java-springboot/target/*
+java-springboot/.idea/*
+java-springboot/gs-spring-boot-docker.iml
+java-springboot/src/main/main.iml
+.DS_Store
+
+

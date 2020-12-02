@@ -33,7 +33,7 @@ public class Application {
     // FC Event function:
     // Invoke handler: /invoke will be called when the FC function responds to an event (e.g. API call or OSS PutObject)
     @PostMapping("/invoke")
-    public String fcEventInvoke(@RequestHeader Map<String,String> headers, @RequestBody String event) {
+    public String fcEventInvoke(@RequestHeader Map<String, String> headers, @RequestBody String event) {
         String fcRequestID = headers.get("x-fc-request-id");
         System.out.println("Invoke finished, request ID: " + fcRequestID);
         return "Hello Spring Boot, from FC Event Function!\nPowered by FunctionCompute custom-container runtime\n"
